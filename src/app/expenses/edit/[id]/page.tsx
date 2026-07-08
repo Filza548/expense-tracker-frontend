@@ -256,6 +256,7 @@ export default function EditExpensePage() {
         categoriesAPI.getAll(),
         api.get(`/expenses/${expenseId}`)  // ← DIRECT API CALL
       ]);
+      console.log(categoriesRes.data);
       
       setCategories(categoriesRes.data);
       const expense = expenseRes.data;
